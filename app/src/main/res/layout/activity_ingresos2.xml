@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ingresos2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="victorlopezapps.basededades.ActivityIngresos2">
+
+    <TextView
+        android:text="Import"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textViewImport" />
+
+    <TextView
+        android:text="Descripcio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewImport"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="85dp"
+        android:id="@+id/textViewDescripcio" />
+
+    <TextView
+        android:text="Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewData" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/textViewImport"
+        android:layout_alignRight="@+id/buttonGuardar"
+        android:layout_alignEnd="@+id/buttonGuardar"
+        android:layout_marginTop="16dp"
+        android:id="@+id/editTextImport" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textViewDescripcio"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editTextDescripcio" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_marginTop="22dp"
+        android:id="@+id/editTextData"
+        android:layout_below="@+id/textViewData"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonGuardar"
+        android:layout_below="@+id/editTextData"
+        android:layout_toRightOf="@+id/textViewDescripcio"
+        android:layout_toEndOf="@+id/textViewDescripcio"
+        android:layout_marginTop="32dp"
+        android:onClick="Guardar" />
+
+    <Button
+        android:text="Enrere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonEnrere"
+        android:layout_alignBaseline="@+id/buttonGuardar"
+        android:layout_alignBottom="@+id/buttonGuardar"
+        android:layout_toRightOf="@+id/buttonGuardar"
+        android:layout_toEndOf="@+id/buttonGuardar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:onClick="Enrere" />
+
+</RelativeLayout>
